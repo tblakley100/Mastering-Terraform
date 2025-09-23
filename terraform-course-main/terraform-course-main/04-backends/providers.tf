@@ -10,14 +10,14 @@ terraform {
       version = "~> 3.0"
     }
   }
-
   backend "s3" {
-    bucket = "terraform-course-lauromueller-remote-backend"
+    bucket = "tf-s3-backend-tcb"
     key    = "04-backends/state.tfstate"
-    region = "eu-west-1"
+    region = "us-east-2"
+
   }
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-2"
 }

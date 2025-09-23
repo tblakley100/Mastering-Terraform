@@ -1,0 +1,5 @@
+#For demo purposes only
+
+bucket = "tf-s3-backend-tcb"
+key = "04-backends/dev/state.tfstate"
+region = "us-east-2"
