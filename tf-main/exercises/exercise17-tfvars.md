@@ -17,16 +17,6 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
 1. Create a `terraform.tfvars` file with sensible values for the variables we have defined so far. It’s important that the file is called `terraform.tfvars`, since Terraform automatically looks for this file.
 
     ```
-    ec2_instance_type = "t2.micro"
-
-    ec2_volume_config = {
-      size = 10
-      type = "gp2"
-    }
-
-    additional_tags = {
-      ValuesFrom = "terraform.tfvars"
-    }
     ```
 
 2. Run the `terraform plan` and `terraform apply` commands to make sure Terraform is correctly loading the values from the `terraform.tfvars` file.
