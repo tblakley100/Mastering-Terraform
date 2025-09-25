@@ -17,6 +17,7 @@ In this exercise, we will delve into the process of handling sensitive values in
     ```
 
 2. Retrieve the value of the output with `terraform output s3_bucket_name`. As you can see, we have no problems retrieving the value of outputs set as sensitive.
+
 3. Create a variable called `my_sensitive_value` containing a sensitive value, and reflect this directly in an output named `sensitive_var`:
 
     ```
