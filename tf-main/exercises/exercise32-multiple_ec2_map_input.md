@@ -42,6 +42,7 @@ If you wish to give it a shot before looking into the detailed step-by-step and 
     ```
 
 3. Also, change the `ec2_instance_config_list` variable to hold an empty list so that we do not create any additional instances from the list.
+
 4. After the variable is defined and its value specified in the `terraform.tfvars` file, you can reference it in a resource block to create EC2 instances. Use a `for_each` loop to iterate over each item in the `ec2_instance_config_map` and create an EC2 instance with the provided configuration.
 
     ```

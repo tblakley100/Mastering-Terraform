@@ -12,7 +12,8 @@ locals {
     developer = [
       "AmazonVPCFullAccess",
       "AmazonEC2FullAccess",
-      "AmazonRDSFullAccess"
+      "AmazonRDSFullAccess",
+      "AmazonS3FullAccess"
     ]
   }
 

@@ -4,7 +4,7 @@ This project is centered around managing AWS Identity and Access Management (IAM
 
 ## Project Overview
 
-<img src="assets/proj02-iam-users.png" alt="deploy-vpc-ec2-instance" width="600"/>
+<img src="assets/proj02-icdam-users.png" alt="deploy-vpc-ec2-instance" width="600"/>
 
 ## Desired Outcome
 
