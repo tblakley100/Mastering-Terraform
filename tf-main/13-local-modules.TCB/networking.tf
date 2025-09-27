@@ -12,5 +12,14 @@ module "vpc" {
       cidr_block = "10.0.0.0/24"
       az         = "us-east-2a"
     }
+    subnet_2 = {
+      cidr_block = "10.0.1.0/24"
+      az         = "us-east-2b"
+    }
+    subnet_3 = {
+      cidr_block = "10.0.128.0/24"
+      az         = "us-east-2c"
+      public     = true
+    }
   }
 }

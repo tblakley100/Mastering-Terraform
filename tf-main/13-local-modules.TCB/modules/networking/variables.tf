@@ -14,6 +14,7 @@ variable "vpc_config" {
 variable "subnet_config" {
   type = map(object({
     cidr_block = string
+    public     = optional(bool, false)
     az         = string
   }))
 
