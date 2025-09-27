@@ -6,6 +6,10 @@ output "module_vpc_cidr_block" {
   value = module.vpc.vpc_cidr_block
 }
 
+output "module_vpc_tags" {
+  value = module.vpc.vpc_tags
+}
+
 output "module_public_subnets" {
   value = module.vpc.public_subnets
 }

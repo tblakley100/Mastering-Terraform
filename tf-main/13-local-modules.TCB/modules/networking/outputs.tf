@@ -4,6 +4,7 @@ locals {
       subnet_id         = aws_subnet.this[key].id
       availability_zone = aws_subnet.this[key].availability_zone
       cidr_block       = aws_subnet.this[key].cidr_block
+      tags            = aws_subnet.this[key].tags
     }
   }
 
@@ -12,6 +13,7 @@ locals {
       subnet_id         = aws_subnet.this[key].id
       availability_zone = aws_subnet.this[key].availability_zone
       cidr_block       = aws_subnet.this[key].cidr_block
+      tags            = aws_subnet.this[key].tags
     }
   }
 }
@@ -24,6 +26,11 @@ output "vpc_id" {
 output "vpc_cidr_block" {
   description = "The CIDR block of the created VPC"
   value       = aws_vpc.this.cidr_block
+}
+
+output "vpc_tags" {
+  description = "The tags assigned to the VPC"
+  value       = aws_vpc.this.tags
 }
 
 output "public_subnets" {
