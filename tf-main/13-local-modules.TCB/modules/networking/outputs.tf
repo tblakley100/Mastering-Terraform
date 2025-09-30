@@ -3,8 +3,8 @@ locals {
     for key in keys(local.public_subnets) : key => {
       subnet_id         = aws_subnet.this[key].id
       availability_zone = aws_subnet.this[key].availability_zone
-      cidr_block       = aws_subnet.this[key].cidr_block
-      tags            = aws_subnet.this[key].tags
+      cidr_block        = aws_subnet.this[key].cidr_block
+      tags              = aws_subnet.this[key].tags
     }
   }
 
@@ -12,8 +12,8 @@ locals {
     for key in keys(local.private_subnets) : key => {
       subnet_id         = aws_subnet.this[key].id
       availability_zone = aws_subnet.this[key].availability_zone
-      cidr_block       = aws_subnet.this[key].cidr_block
-      tags            = aws_subnet.this[key].tags
+      cidr_block        = aws_subnet.this[key].cidr_block
+      tags              = aws_subnet.this[key].tags
     }
   }
 }
