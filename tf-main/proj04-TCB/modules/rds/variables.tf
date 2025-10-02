@@ -39,8 +39,8 @@ variable "engine" {
   description = "Which engine to use for the RDS instance. Currently only postgres is supported."
 
   validation {
-    condition     = contains(["postgres-latest", "postgres-14"], var.engine)
-    error_message = "DB engine must be postgres-latest or postgres-14"
+    condition     = contains(["postgres-latest", "postgres-16"], var.engine)
+    error_message = "DB engine must be postgres-latest or postgres-16"
   }
 }
 
